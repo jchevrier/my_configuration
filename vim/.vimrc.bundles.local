@@ -1,0 +1,13 @@
+Bundle "rhysd/vim-clang-format"
+
+" To be added later
+"Bundle "vim-scripts/Conque-GDB"
+
+" Is following useful ?
+"Bundle 'hari-rangarajan/CCTree' 
+
+""""""" http://vimawesome.com/plugin/cscope-vim
+Bundle 'brookhong/cscope.vim'
+
+Bundle "francoiscabrol/ranger.vim"
+

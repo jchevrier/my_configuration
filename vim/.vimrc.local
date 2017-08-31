@@ -1,0 +1,45 @@
+map <F2> :ClangFormat<CR>
+
+nnoremap <leader>fa :call CscopeFindInteractive(expand('<cword>'))<CR>
+nnoremap <leader>l :call ToggleLocationList()<CR>
+
+"""""""Some optional key mappings to search directly.
+" s: Find this C symbol
+nnoremap  <leader>fs :call CscopeFind('s', expand('<cword>'))<CR>
+" " g: Find this definition
+nnoremap  <leader>fg :call CscopeFind('g', expand('<cword>'))<CR>
+" " d: Find functions called by this function
+nnoremap  <leader>fd :call CscopeFind('d', expand('<cword>'))<CR>
+" " c: Find functions calling this function
+nnoremap  <leader>fc :call CscopeFind('c', expand('<cword>'))<CR>
+" " t: Find this text string
+nnoremap  <leader>ft :call CscopeFind('t', expand('<cword>'))<CR>
+" " e: Find this egrep pattern
+nnoremap  <leader>fe :call CscopeFind('e', expand('<cword>'))<CR>
+" " f: Find this file
+nnoremap  <leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
+" " i: Find files #including this file
+nnoremap  <leader>fi :call CscopeFind('i', expand('<cword>'))<CR>"
+
+" Disable tab highlighting
+let g:indent_guides_enable_on_vim_startup = 0
+let g:airline_theme = "wombat"
+colorscheme molokai
+set nospell
+set noexpandtab
+set shiftwidth=8
+set tabstop=8
+
+" Must set following variable in  .vimrc.before.local
+"   let g:spf13_no_easyWindows = 1
+"   in order not to define follwing mapping in .vimrc
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-L> <C-W>l
+map <C-H> <C-W>h
+
+" Misc
+match ErrorMsg '\%>80v.\+' " Length warning if > 80
+
+" Set width and spelling for git commit messages
+autocmd filetype gitcommit setlocal spell textwidth=72
