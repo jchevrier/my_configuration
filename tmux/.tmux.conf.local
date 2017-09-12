@@ -265,3 +265,5 @@ set -g mouse on
 
 # move status line to top
 #set -g status-position top
+
+run ~/.tmux/plugins/tmux-better-mouse-mode/scroll_copy_mode.tmux
