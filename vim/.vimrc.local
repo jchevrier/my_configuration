@@ -29,6 +29,7 @@ set nospell
 set noexpandtab
 set shiftwidth=8
 set tabstop=8
+set number relativenumber
 
 " Must set following variable in  .vimrc.before.local
 "   let g:spf13_no_easyWindows = 1
