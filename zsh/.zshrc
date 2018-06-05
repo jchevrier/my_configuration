@@ -78,7 +78,31 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git dnf screen powerline jump)
+plugins=(git screen powerline jump)
+
+# Check distribution and add relevant plugin(s).
+case `uname` in
+	Darwin)
+		plugins+=brew
+		;;
+	Linux)
+		case `lsb_release -i | cut -f 2` in
+			Ubuntu)
+				plugins+=ubuntu
+				;;
+			Debian)
+				plugins+=debian
+				;;
+			Fedora)
+				plugins+=fedora
+				;;
+			*)
+				;;
+		esac
+		;;
+	*)
+		;;
+esac
 
 # User configuration
 
