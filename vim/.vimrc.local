@@ -39,6 +39,9 @@ map <C-K> <C-W>k
 map <C-L> <C-W>l
 map <C-H> <C-W>h
 
+" Set indent as 4 spaces
+set autoindent expandtab tabstop=4 shiftwidth=4
+
 " Misc
 match ErrorMsg '\%>80v.\+' " Length warning if > 80
 
