@@ -144,6 +144,14 @@ export EDITOR='vim'
 alias sdir="pwd > /tmp/zshrc_savedir"
 alias ldir="cd \`cat /tmp/zshrc_savedir\`"
 
+# Upgrade powerlevel9k
+upgrade_p9k() {
+    local mypath=`pwd`
+    cd $ZSH/custom/themes/powerlevel9k
+    git pull
+    cd $mypath
+}
+
 # Load local specific configuration if any.
 if [[ -a ~/.zshrc.local ]]; then
     source ~/.zshrc.local
