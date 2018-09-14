@@ -152,6 +152,9 @@ upgrade_p9k() {
     cd $mypath
 }
 
+# Update vim packages
+alias upgrade_vim="vim +BundleInstall! +BundleClean"
+
 # Load local specific configuration if any.
 if [[ -a ~/.zshrc.local ]]; then
     source ~/.zshrc.local
