@@ -34,6 +34,8 @@ POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND="240"
 POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND="white"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND="blue"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND="white"
+###Disable SVN hooks
+POWERLEVEL9K_VCS_SVN_HOOKS=""
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -78,7 +80,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git screen powerline jump)
+plugins=(git screen jump)
 
 # Check distribution and add relevant plugin(s).
 case `uname` in
