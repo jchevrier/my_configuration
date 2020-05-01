@@ -36,7 +36,7 @@ POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND="blue"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND="white"
 ###Disable SVN hooks
 POWERLEVEL9K_VCS_SVN_HOOKS=""
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -146,13 +146,7 @@ export EDITOR='vim'
 alias sdir="pwd > /tmp/zshrc_savedir"
 alias ldir="cd \`cat /tmp/zshrc_savedir\`"
 
-# Upgrade powerlevel9k
-upgrade_p9k() {
-    local mypath=`pwd`
-    cd $ZSH/custom/themes/powerlevel9k
-    git pull
-    cd $mypath
-}
+alias upgrade_p10k="git -C $ZSH_CUSTOM/themes/powerlevel10k pull"
 
 # Update vim packages
 alias upgrade_vim="vim +BundleInstall! +BundleClean"
