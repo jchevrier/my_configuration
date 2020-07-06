@@ -1,6 +1,7 @@
 
 " let g:spf13_bundle_groups=['general', 'writing', 'neocomplete', 'programming', 'php', 'ruby', 'python', 'javascript', 'html', 'misc',]
-let g:spf13_bundle_groups=['general', 'writing', 'neocomplete', 'programming', 'python', 'misc',]
+"let g:spf13_bundle_groups=['general', 'writing', 'neocomplete', 'programming', 'python', 'misc',]
+let g:spf13_bundle_groups=['general', 'writing', 'neocomplete', 'programming', 'python',]
 let g:spf13_no_autochdir = 1
 let g:spf13_no_easyWindows = 1
 let g:airline_powerline_fonts=1
