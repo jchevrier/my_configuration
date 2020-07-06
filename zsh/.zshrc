@@ -148,7 +148,7 @@ alias ldir="cd \`cat /tmp/zshrc_savedir\`"
 alias upgrade_p10k="git -C $ZSH_CUSTOM/themes/powerlevel10k pull"
 
 # Update vim packages
-alias upgrade_vim="vim +BundleInstall! +BundleClean"
+alias upgrade_vim="vim +PlugUpdate +PlugUpgrade +PlugClean +qa"
 
 # Load local specific configuration if any.
 if [[ -a ~/.zshrc.local ]]; then
