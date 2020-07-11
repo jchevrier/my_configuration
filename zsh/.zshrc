@@ -95,7 +95,7 @@ case `uname` in
 				plugins+=debian
 				;;
 			Fedora)
-				plugins+=fedora
+				plugins+=dnf
 				;;
 			*)
 				;;
