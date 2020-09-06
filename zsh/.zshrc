@@ -20,7 +20,7 @@ POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_PREFIX='%K{240}%F{white} \uF017 %D{%H:%M:%
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%K{240}%F{white} \uF017 %D{%H:%M:%S}  %f%k%F{240}\UE0B0%f '
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir_writable dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs history command_execution_time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs virtualenv history command_execution_time)
 
 #Configure prompt colors.
 POWERLEVEL9K_STATUS_OK_BACKGROUND="238"
