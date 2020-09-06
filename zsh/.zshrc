@@ -145,6 +145,9 @@ export EDITOR='vim'
 alias sdir="pwd > /tmp/zshrc_savedir"
 alias ldir="cd \`cat /tmp/zshrc_savedir\`"
 
+# Override previous Oh-My-Zsh upgrade command and avoid warnings
+alias upgrade_oh_my_zsh="omz update"
+
 alias upgrade_p10k="git -C $ZSH_CUSTOM/themes/powerlevel10k pull"
 
 # Update vim packages
