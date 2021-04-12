@@ -41,7 +41,7 @@ Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
 Plug 'jiangmiao/auto-pairs' " Auto parentheses/brackets/quotes pairs
 Plug 'nathanaelkane/vim-indent-guides' "Highlight indentation levels
-Plug 'vim-scripts/Python-mode-klen'
+Plug 'python-mode/python-mode'
 Plug 'vim-scripts/restore_view.vim' "Restore cursor position and folds
 Plug 'terryma/vim-multiple-cursors' "Add multiple line edit
 Plug 'neoclide/coc.nvim', {'branch': 'release'} "Conquer of Completion
